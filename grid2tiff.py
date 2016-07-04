@@ -19,12 +19,18 @@ or
 
 where x, y, z are coordinates of tiff file image in an output image.
 
-NOTICE: This script is not checking if input files cover all pixels of output image (if not they are zeroed) or if they overlap (if 
-        yes, they will overlap randomly - the last file read from dir will be put on top).
-        Size of output image is calculated basing on file with maximum x_y_z... coordinates in name + its image size
-        All files from provided directory are taken (and must follow naming rules).
+NOTICE: - This script is not checking if input files cover all pixels of output image (if not they are zeroed) 
+          or if they overlap (if yes, they will overlap randomly - the last file read from dir will be put on top).
+        - Size of output image is calculated basing on file with maximum x_y_z... coordinates in name + its image size
+        - All tiff files from provided directory are taken (and must follow naming rules).
+        - It is possible to give 3D coordinates for 2D images (they are treated as a 1 pixel depth) or
+          2D coordinates for 3D (they are then position in 2D x/y space at 0 coordinate for z (depth)) or
+          even mix all above
         
 To use script provide correct paths for INPUT_DIR and OUTPUT_FILE
+
+
+Author: Krzysztof Gonciarz
 '''
 
 
