@@ -39,7 +39,7 @@ Author: Krzysztof Gonciarz
 '''
 
 
-INPUT_DIR = '/Users/gonciarz/Documents/MOSAIC/work/test/mosaic'
+INPUT_DIR = '/Users/gonciarz/Documents/MOSAIC/work/test/mosaic/'
 OUTPUT_FILE = '/tmp/ij.tif'
 
 
